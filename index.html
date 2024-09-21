@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section class="bg-[#F9F9FF]">
+      <div class="container mx-auto px-20 py-12">
+        <div class="grid grid-cols-5 justify-between items-center">
+          <div class="left-content col-span-3">
+            <h1 class="text-[60px] font-bold leading-[70px]">Master Framer: Exclusive Tutorials</h1><br>
+            <p class="text-xl">Join for exclusive access to premium tutorials, behind-the-scenes, and more. Elevate your creativity and learning experience.</p><br>
+            <div class="btn-box flex items-center gap-5">
+              <div class="primary-btn"><a class="bg-slate-950 py-3 px-5 text-white rounded-md" href="">Become a Member</a></div>
+              <div class="primary-btn"><a href="" class="flex items-center gap-2"> <span><img class="w-[40px]" src="images/player.svg" alt=""></span> Presentation Video</a></div>
+            </div>
+          </div>
+          <div class="right-content col-span-2">
+            <img src="images/heroPic.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto  py-12 px-20">
+        <div class="grid p-10 mx-14 grid-cols-3 items-center border rounded-xl border-slate-300 min-h-[180px]">
+          <div>
+            <h2 class="text-4xl font-semibold text-blue-700">75</h2>
+            <p class="text-xl text-slate-500">Total Tutorials</p>
+          </div>
+
+          <div>
+            <h2 class="text-4xl font-semibold text-orange-500">100+</h2>
+            <p class="text-xl text-slate-500">Hours of Tutorial Content</p>
+          </div>
+          <div>
+            <h2 class="text-4xl font-semibold text-green-600">99%</h2>
+            <p class="text-xl text-slate-500">Satisfaction Rate</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+      <div class="container mx-auto py-12 px-20">
+        <div class="grid grid-cols-7 items-center mx-20 rounded-full border border-slate-300 min-h-[200px]">
+          <div class="left-img col-span-2 bg-sky-300 rounded-full m-5">
+            <img src="images/man.png" alt="">
+          </div>
+          <div class="right-content col-span-5 px-5">
+            <div class="text-3xl flex items-center font-semibold mb-3">Hi! I'm Alex <div class="text-sm ml-5 bg-sky-50 py-2 px-5 font-normal rounded-full text-sky-600">Expert <i class="fa-solid fa-award ml-2"></i></div>
+            </div>
+            <p class="text-xl text-slate-500">I'm your guide to mastering Framer and unleashing your creativity in the world of design. With a passion for teaching and a wealth of experience in the field, I'm dedicated to empowering learners of all levels.</p><br>
+            <div class="social-icon items-center flex gap-5 text-[20px]">
+              <div><i class="fa-brands fa-twitter"></i></div>
+              <div><i class="fa-brands fa-linkedin"></i></div>
+              <div><i class="fa-brands fa-youtube"></i></div>
+              <div><img class="w-[20px]" src="images/framer.svg" alt=""></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto p-5">
+        <h1 class="text-3xl font-bold mb-5">Frequently Asked Questions</h1>
+        
+        <!-- Question 1 -->
+        <div class="bg-white p-4 shadow-md mb-4">
+          <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ('faq1')">
+            <h3 class="font-semibold">What is Framer?</h3>
+            <span id="faq1-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div id="faq1" class="faq-content mt-3">
+            <p>Framer is a design tool for creating interactive prototypes with advanced animations.</p>
+          </div>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="bg-white p-4 shadow-md mb-4">
+          <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ('faq2')">
+            <h3 class="font-semibold">How do I use Tailwind CSS?</h3>
+            <span id="faq2-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div id="faq2" class="faq-content mt-3">
+            <p>Tailwind CSS is a utility-first framework that provides low-level utility classes for designing UI.</p>
+          </div>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="bg-white p-4 shadow-md mb-4">
+          <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ('faq3')">
+            <h3 class="font-semibold">How can I toggle FAQ items?</h3>
+            <span id="faq3-icon"><i class="fas fa-plus"></i></span>
+          </div>
+          <div id="faq3" class="faq-content mt-3">
+            <p>You can use JavaScript to toggle the visibility of content and change the icons between `+` and `-`.</p>
+          </div>
+        </div>
+    
+      </div>    
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
