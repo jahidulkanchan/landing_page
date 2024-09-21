@@ -21,7 +21,7 @@ $(document).ready(function(){
       1000: {
         nav: true,
         items: 1,
-        stagePadding: 250
+        stagePadding: 100
       }
     },
     onTranslated: function() {
