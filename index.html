@@ -96,61 +96,100 @@
       </div>
     </section>
     <section class="bg-slate-50"> 
-      <div class="container w-11/12 mx-auto py-12 px-20">
-        <h1 class="text-center font-semibold mb-10 text-4xl">Answers to Your Questions</h1>
-      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-2xl font-medium">How do I cancel my subscription?</div>
-        <div class="collapse-content">
-          <p class="text-slate-500 text-xl">Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-2xl font-medium">Are the tutorials suitable for beginners?</div>
-        <div class="collapse-content">
-          <p class="text-slate-500 text-xl">Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-2xl font-medium">Can I access tutorials on multiple devices?</div>
-        <div class="collapse-content">
-          <p class="text-slate-500 text-xl">Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-2xl font-medium">Is there a difference between monthly and yearly subscriptions?</div>
-        <div class="collapse-content">
-          <p class="text-slate-500 text-xl">Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-2xl font-medium">What happens if my payment fails during the subscription period?</div>
-        <div class="collapse-content">
-          <p class="text-slate-500 text-xl">Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
-        <input type="radio" name="my-accordion-3" checked="checked" />
-        <div class="collapse-title text-2xl font-medium">Can I get a refund if I'm not satisfied with the tutorials?</div>
-        <div class="collapse-content">
-          <p class="text-slate-500 text-xl">Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
-        </div>
+      <div class="container md:w-11/12 mx-auto py-12 px-2 md:px-20">
+      <h1 class="text-center font-semibold mb-10 text-4xl">Answers to Your Questions</h1>
+      
+    <!-- FAQ Accordion -->
+    <div class="faq-item bg-white p-5 mb-4 rounded shadow">
+      <h2 class="faq-question text-xl font-semibold cursor-pointer flex justify-between items-center" onclick="toggleAnswer(0)">
+        1. What services do you offer?
+        <i class="fas fa-minus ml-2"></i>
+      </h2>
+      <div class="faq-answer active mt-2 text-gray-600">
+        <p>We offer a wide range of services, including web development, graphic design, 3D animation, and more.</p>
       </div>
     </div>
+
+    <div class="faq-item bg-white p-5 mb-4 rounded shadow">
+      <h2 class="faq-question text-xl font-semibold cursor-pointer flex justify-between items-center" onclick="toggleAnswer(1)">
+        2. What is your pricing model?
+        <i class="fas fa-plus ml-2"></i>
+      </h2>
+      <div class="faq-answer mt-2 text-gray-600">
+        <p>We offer flexible pricing plans, including monthly subscriptions and one-time purchases.</p>
+      </div>
+    </div>
+
+    <div class="faq-item bg-white p-5 mb-4 rounded shadow">
+      <h2 class="faq-question text-xl font-semibold cursor-pointer flex justify-between items-center" onclick="toggleAnswer(2)">
+        3. How can I get started?
+        <i class="fas fa-plus ml-2"></i>
+      </h2>
+      <div class="faq-answer mt-2 text-gray-600">
+        <p>Getting started is easy! Just reach out via our contact form, and we'll guide you through the process.</p>
+      </div>
+    </div>
+  </div>
+  
+      
+    </div>
     </section>
-    <section class="bg-blue-600">
-      <div class="container py-12 px-20">
+    <section class="bg-blue-500">
+      <div class="container md:w-11/12 py-12 px-2 md:px-20">
         <h1 class="text-4xl font-semibold text-center text-white my-10">Kind Words <br> from Members</h1>
         <div class="owl-carousel owl-theme">
-          <div class="item"><h4>1</h4></div>
-          <div class="item"><h4>2</h4></div>
-          <div class="item"><h4>3</h4></div>
-          <div class="item"><h4>4</h4></div>
-          <div class="item"><h4>5</h4></div>
+          <div class="item">
+            <div class="user flex justify-between items-center">
+              <div class="profile gap-2 flex items-center">
+                <div class="w-[35px]"><img src="images/user.svg" alt=""></div>
+                <div>
+                  <h2 class="text-xl">David Warner</h2>
+                  <p class="text-sm">Product Designer</p>
+                </div>
+              </div>
+              <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+            <p class="text-lg mt-3 text-slate-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat ea aut. Unde atque sed illo, facere, beatae asperiores culpa similique dolore mollitia voluptates illum? Veniam dignissimos cupiditate harum cum.</p>
+          </div>
+          <div class="item">
+            <div class="user flex justify-between items-center">
+              <div class="profile gap-2 flex items-center">
+                <div class="w-[35px]"><img src="images/user.svg" alt=""></div>
+                <div>
+                  <h2 class="text-xl">David Warner</h2>
+                  <p class="text-sm">Product Designer</p>
+                </div>
+              </div>
+              <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+            <p class="text-lg mt-3 text-slate-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat ea aut. Unde atque sed illo, facere, beatae asperiores culpa similique dolore mollitia voluptates illum? Veniam dignissimos cupiditate harum cum.</p>
+          </div>
+          <div class="item">
+            <div class="user flex justify-between items-center">
+              <div class="profile gap-2 flex items-center">
+                <div class="w-[35px]"><img src="images/user.svg" alt=""></div>
+                <div>
+                  <h2 class="text-xl">David Warner</h2>
+                  <p class="text-sm">Product Designer</p>
+                </div>
+              </div>
+              <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+            <p class="text-lg mt-3 text-slate-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat ea aut. Unde atque sed illo, facere, beatae asperiores culpa similique dolore mollitia voluptates illum? Veniam dignissimos cupiditate harum cum.</p>
+          </div>
+          <div class="item">
+            <div class="user flex justify-between items-center">
+              <div class="profile gap-2 flex items-center">
+                <div class="w-[35px]"><img src="images/user.svg" alt=""></div>
+                <div>
+                  <h2 class="text-xl">David Warner</h2>
+                  <p class="text-sm">Product Designer</p>
+                </div>
+              </div>
+              <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
+            </div>
+            <p class="text-lg mt-3 text-slate-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quaerat ea aut. Unde atque sed illo, facere, beatae asperiores culpa similique dolore mollitia voluptates illum? Veniam dignissimos cupiditate harum cum.</p>
+          </div>
         </div>
         
       </div>

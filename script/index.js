@@ -3,10 +3,9 @@ $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 20,
+    dots: false,
     center: true,
     autoplay: true,
-    nav: true,
-    stagePadding: 150,
     autoplayTimeout: 3000,
     items: 3, /* Adjust based on how many items you want visible */
     responsive: {
@@ -15,10 +14,14 @@ $(document).ready(function(){
      /* Optional for smaller screens */
       },
       600: {
-        items: 2
+        nav: true,
+        items: 1,
+        stagePadding: 70,
       },
       1000: {
-        items: 2
+        nav: true,
+        items: 1,
+        stagePadding: 250
       }
     },
     onTranslated: function() {
@@ -30,3 +33,22 @@ $(document).ready(function(){
     }
   });
 });
+
+
+// =========================================================
+function toggleAnswer(index) {
+  const answers = document.querySelectorAll('.faq-answer');
+  const icons = document.querySelectorAll('.faq-question i');
+
+  answers.forEach((answer, i) => {
+    if (i === index) {
+      answer.classList.toggle('active');
+      icons[i].classList.toggle('fa-plus');
+      icons[i].classList.toggle('fa-minus');
+    } else {
+      answer.classList.remove('active');
+      icons[i].classList.add('fa-plus');
+      icons[i].classList.remove('fa-minus');
+    }
+  });
+}
