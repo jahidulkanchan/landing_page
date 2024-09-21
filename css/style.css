@@ -1,0 +1,39 @@
+.owl-carousel .item {
+  background: #4CAF50;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  border-radius: 10px;
+}
+
+/* Default opacity for side items */
+.owl-carousel .owl-item {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+/* Full opacity for the center (active) item */
+.owl-carousel .owl-item.active.center {
+  opacity: 1 !important;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.owl-nav button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 16px;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
