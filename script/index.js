@@ -5,18 +5,20 @@ $(document).ready(function(){
     margin: 20,
     center: true,
     autoplay: true,
+    nav: true,
+    stagePadding: 150,
     autoplayTimeout: 3000,
     items: 3, /* Adjust based on how many items you want visible */
     responsive: {
       0: {
         items: 1,
-        stagePadding: 50, /* Optional for smaller screens */
+     /* Optional for smaller screens */
       },
       600: {
-        items: 3
+        items: 2
       },
       1000: {
-        items: 3
+        items: 2
       }
     },
     onTranslated: function() {
