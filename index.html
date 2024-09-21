@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -69,46 +71,34 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="container mx-auto p-5">
-        <h1 class="text-3xl font-bold mb-5">Frequently Asked Questions</h1>
-        
-        <!-- Question 1 -->
-        <div class="bg-white p-4 shadow-md mb-4">
-          <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ('faq1')">
-            <h3 class="font-semibold">What is Framer?</h3>
-            <span id="faq1-icon"><i class="fas fa-plus"></i></span>
-          </div>
-          <div id="faq1" class="faq-content mt-3">
-            <p>Framer is a design tool for creating interactive prototypes with advanced animations.</p>
-          </div>
+    <section class="bg-slate-50"> 
+      <div class="container w-11/12 mx-auto py-12 px-20">
+        <h1 class="text-center font-semibold mb-10 text-4xl">Answers to Your Questions</h1>
+      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-2xl font-medium">How do I cancel my subscription?</div>
+        <div class="collapse-content">
+          <p>Assess your business size and goals. Our Starter is great for small ventures, Pro for growth, and Enterprise for large-scale operations.</p>
         </div>
-    
-        <!-- Question 2 -->
-        <div class="bg-white p-4 shadow-md mb-4">
-          <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ('faq2')">
-            <h3 class="font-semibold">How do I use Tailwind CSS?</h3>
-            <span id="faq2-icon"><i class="fas fa-plus"></i></span>
-          </div>
-          <div id="faq2" class="faq-content mt-3">
-            <p>Tailwind CSS is a utility-first framework that provides low-level utility classes for designing UI.</p>
-          </div>
+      </div>
+      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-2xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
         </div>
-    
-        <!-- Question 3 -->
-        <div class="bg-white p-4 shadow-md mb-4">
-          <div class="flex justify-between items-center cursor-pointer" onclick="toggleFAQ('faq3')">
-            <h3 class="font-semibold">How can I toggle FAQ items?</h3>
-            <span id="faq3-icon"><i class="fas fa-plus"></i></span>
-          </div>
-          <div id="faq3" class="faq-content mt-3">
-            <p>You can use JavaScript to toggle the visibility of content and change the icons between `+` and `-`.</p>
-          </div>
+      </div>
+      <div class="collapse collapse-plus shadow-sm my-3 bg-white">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-2xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-content">
+          <p>hello</p>
         </div>
-    
-      </div>    
+      </div>
+    </div>
     </section>
   </main>
   <footer></footer>
+  <script src="script/index.js"></script>
 </body>
 </html>
