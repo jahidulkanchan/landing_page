@@ -52,3 +52,14 @@ function toggleAnswer(index) {
     }
   });
 }
+// ======================================================
+const toggleBtn = document.getElementById('toggleBtn');
+const firstCard = document.getElementById('firstCard');
+const secondCard = document.getElementById('secondCard');
+toggleBtn.addEventListener('click', () => {
+  firstCard.classList.toggle('hidden');
+  secondCard.classList.toggle('hidden');
+  document.getElementById('year').classList.toggle('text-orange-500');
+  document.getElementById('month').classList.toggle('text-orange-500');
+  document.getElementById('circleBtn').classList.toggle('float-end');
+});

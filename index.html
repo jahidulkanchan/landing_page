@@ -172,10 +172,12 @@
             </ul>
           </div>
           <div class="pricing-cart">
-            <div class="text-center">
-              <p>Yearly save 50%</p>
+            <div id="toggleBtn" class="flex gap-5 justify-center text-xl cursor-pointer my-8">
+              <p id="year" class="text-orange-500">Yearly - save 50%</p>
+              <p class="text-[16px] bg-gray-200 rounded-full w-[50px]"><span id="circleBtn" class="float-start px-1"><i class="fa-solid fa-circle text-orange-500"></i></span></p>
+              <p id="month">Monthly</p>
             </div>
-            <div class="card mx-auto md:w-11/12 p-4 shadow bg-white border border-slate-200 min-h-[200px]">
+            <div id="firstCard" class="card mx-auto md:w-11/12 p-4 shadow bg-white border border-slate-200 min-h-[200px]">
               <div class="dir mb-5 flex items-center justify-between ">
                 <div class="time text-orange-500 font-semibold text-3xl">Yearly</div>
                 <div class="savings "> <span class="bg-sky-100 py-2 rounded-full px-4 text-green-600 font-semibold">Save 50%</span></div>
@@ -191,7 +193,7 @@
               </div>
             </div>
             <!-- =========================== -->
-            <div class="card hidden mx-auto md:w-11/12 p-4 shadow bg-white border border-slate-200 min-h-[200px]">
+            <div id="secondCard" class="card hidden mx-auto md:w-11/12 p-4 shadow bg-white border border-slate-200 min-h-[200px]">
               <div class="dir mb-5">
                 <div class="time text-orange-500 font-semibold text-3xl">Monthly</div>
               </div>
